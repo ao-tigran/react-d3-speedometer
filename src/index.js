@@ -194,7 +194,7 @@ class ReactSpeedometer extends React.Component {
         range = config.maxAngle - config.minAngle
         // r = config.size / 2;
         r = config.width / 2
-        pointerHeadLength = Math.round((r - ringInset) * config.pointerHeadLengthPercent)
+        pointerHeadLength = Math.round((r - config.ringInset) * config.pointerHeadLengthPercent)
 
         // a linear scale that maps domain values to a percent from 0..1
         // scale = d3.scaleLinear()
